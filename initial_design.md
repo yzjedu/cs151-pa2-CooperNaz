@@ -5,7 +5,7 @@
 2. Set the sentinel to 'no'
 3. Set losses to 0
 4. Prompt the user to choose between starting the game with 10 and 100 sticks and set the number of total sticks accordingly
-5. While the user says 'yes' to playing again:
+5. While the user does not say 'no' to playing again:
    1. While the amount of total sticks is greater than zero:
       1. If the amount of sticks is greater than 0:
          1. Prompt player 1 to input the number of sticks they want to take
