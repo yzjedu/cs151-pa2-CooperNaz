@@ -101,9 +101,9 @@ while replay != 'no' and replay == 'yes':
       # Output the number of losses for each player
 
       print('\nRESULTS:')
-      print(f'\n\tPlayer 1 lost {player1_loss} times.')
-      print(f'\n\tPlayer 2 lost {player2_loss} times.')
-      print(f'\n\tPlayer 3 lost {player3_loss} times.')
+      print(f'\tPlayer 1 lost {player1_loss} times.')
+      print(f'\tPlayer 2 lost {player2_loss} times.')
+      print(f'\tPlayer 3 lost {player3_loss} times.')
 
       # Prompt the user to input if they want to play again or not
       replay = input('\nWould you like to play again? ')
@@ -115,9 +115,9 @@ while replay != 'no' and replay == 'yes':
 
 # Output the number of losses for each player
 print('\nRESULTS:')
-print(f'\n\tPlayer 1 lost {player1_loss} times.')
-print(f'\n\tPlayer 2 lost {player2_loss} times.')
-print(f'\n\tPlayer 3 lost {player3_loss} times.')
+print(f'\tPlayer 1 lost {player1_loss} times.')
+print(f'\tPlayer 2 lost {player2_loss} times.')
+print(f'\tPlayer 3 lost {player3_loss} times.')
 
 # Print a thank-you message
 print('\nThank you for playing!')
