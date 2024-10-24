@@ -7,3 +7,8 @@
 # Data Out: Losses
 # Credits:
 
+# Output purpose of the program
+print('Hello! Welcome to the Game of Sticks!')
+print('This game includes three players, one of which is part of the program!')
+print('Rules:'
+      )
