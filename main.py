@@ -15,7 +15,7 @@ print('This game includes three players, one of which is part of the program!')
 
 # Output the rules
 print('\nRULES:')
-print('\t1. The game starts with a set amount of sticks: 10 or 100')
+print('\t1. The game starts with a set amount of sticks between 10 and 100')
 print('\t2. Three players take turns choosing how many sticks to take')
 print('\t3. On your turn, you must take either 1, 2, or 3 sticks')
 print('\t4. The player who takes the last stick loses')
@@ -34,22 +34,14 @@ player3_loss = 0
 # Start the loop that will run until the player decides to stop
 while replay != 'no' and replay == 'yes':
 
-      # Ask the user to choose which game mode they will play
-      print('\nGAME MODES:')
-      print('\t1. 10 sticks')
-      print('\t2. 100 sticks')
-      game_mode = int(input('\nWhich game mode would you like to play? '))
+      total_sticks = input('\nHow many sticks do you want to play with? ')
 
-      # Make sure that the user chooses game mode 1 or 2
-      while game_mode != 1 and game_mode != 2:
+      # Make sure that the user chooses a valid number of sticks
+      while not 10 <= total_sticks <= 100 and not total_sticks.isdigit():
             print('\nInvalid input. Please try again.')
-            game_mode = int(input('\nWhich game mode would you like to play? '))
+            total_sticks = input('\nHow many sticks do you want to play with? ')
 
-      # Set the number of total sticks based on the game mode
-      if game_mode == 1:
-            total_sticks = 10
-      else:
-            total_sticks = 100
+      total_sticks = int(total_sticks)
       sticks = total_sticks
 
       # Set up each player's turn to run when the number of total sticks is greater than zero
